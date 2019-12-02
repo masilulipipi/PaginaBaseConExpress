@@ -1,0 +1,150 @@
+/* Usando el @import tenemos que poner el enlace en la hoja de CSS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+/* Selector Universal */
+* {
+  box-sizing: border-box; /* para poder aplicar padding y border de manera tranquila */
+}
+
+body {
+  background-image: url(../images/bg-2.png);
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+  /* border: solid 1px green; para debug */
+}
+
+.float-fix {
+  overflow: hidden; /* arreglar el problema de la flotación respecto a el contenedor */
+}
+
+/* HEADER */
+.main-header {
+  background-color: tomato;
+  padding: 10px;
+}
+
+/* Agrupación de selectores */
+.logo,
+.left-navbar {
+  float: left;
+}
+
+.right-navbar {
+  float: right;
+}
+
+.left-navbar,
+.right-navbar {
+  margin-top: 10px;
+}
+
+.left-navbar li,
+.right-navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.left-navbar li a,
+.right-navbar li a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 30px;
+}
+
+.main-left-content {
+  background-color: #ffffff;
+}
+
+.main-left-content {
+  width: 800px;
+  float: left;
+}
+
+.main-right-content {
+  width: 320px;
+  float: right;
+}
+
+/* Products */
+.product-box {
+  float: left;
+  width: 380px;
+  margin: 10px;
+}
+
+.product-box img {
+  width: 100%;
+}
+
+.product-box a { 
+  background-color: tomato;
+  color: #ffffff;
+  padding: 10px;
+}
+
+/* Right Content */
+.right-content-title {
+  background-color: #ffffff;
+  padding: 10px;
+  border: solid 1px aqua;
+  margin-top: 0;
+}
+
+.tutorials-list {
+  background-color: #ffffff;
+  border: solid 1px aqua;
+  margin-bottom: 30px;
+  border-bottom: none;
+}
+
+.tutorials-list  li {
+  padding: 10px;
+  border-bottom: 1px solid aqua;
+}
+
+.tutorials-list  a { 
+  color: #000000;
+}
+
+.tutorials-list img {
+  float: left;
+  margin-right: 10px;
+}
+
+.tutorials-list p {
+  font-size: 14px;
+}
+
+.advertising {
+  background-color: #ffffff;
+  border: solid 1px aqua;
+  padding: 10px 10px 0 10px;
+}
+
+.advertising li {
+  margin-bottom: 10px;
+}
+
+.advertising img {
+  width: 100%;
+}
